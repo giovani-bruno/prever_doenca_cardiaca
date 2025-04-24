@@ -65,7 +65,7 @@ if prever:
     st.write(f"Probabilidade de ter: {previsao_prob[0, 1]:.0%}")
     st.write(f"Probabilidade de não ter: {previsao_prob[0, 0]:.0%}")
     
-    if previsao[0] == "sim":
+    if previsao[0] == 1:
         st.error("⚠️ Atenção: Há risco de doença cardíaca!")
     else:
         st.success("✅ Sem indícios de doença cardíaca.")
